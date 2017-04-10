@@ -34,11 +34,13 @@
   {}
   {:target (. js/document (getElementById "no-root-2"))})
 
-(om/root
-  (fn [data owner]
-    (reify
-      om/IRender
-      (render [_]
-        (dom/div nil "uncomment me"))))
-  app-state
-  {:target (. js/document (getElementById "no-root-3"))})
+; uncommenting the following makes it work
+
+;(om/root
+  ;(fn [data owner]
+    ;(reify
+      ;om/IRender
+      ;(render [_]
+        ;(dom/div nil "uncomment me"))))
+  ;app-state
+  ;{:target (. js/document (getElementById "no-root-3"))})
